@@ -1,0 +1,89 @@
+COMPLEXITY ANALYSIS
+===================
+
+1. HASHING
+
+Hash function:
+h(k) = k % 10
+
+Insertion:
+Best Case    : O(1)
+Average Case : O(1)
+Worst Case   : O(n)
+
+Searching:
+Best Case    : O(1)
+Average Case : O(1)
+Worst Case   : O(n)
+
+Space Complexity:
+O(m)
+
+where m is the size of the hash table.
+
+
+2. LINEAR SEARCH
+
+Best Case:
+O(1)
+
+Average Case:
+O(n)
+
+Worst Case:
+O(n)
+
+Space Complexity:
+O(1)
+
+
+3. LOAD FACTOR
+
+Load Factor = Number of elements / Hash table size
+
+             = 8 / 10
+
+             = 0.8
+
+Therefore, the load factor is 0.8 or 80%.
+
+
+4. EFFECT OF COLLISIONS
+
+Collisions occur when two or more song IDs produce
+the same hash index.
+
+For example:
+
+105 % 10 = 5
+315 % 10 = 5
+525 % 10 = 5
+735 % 10 = 5
+
+Therefore, these IDs cause collisions.
+
+Similarly:
+
+210 % 10 = 0
+420 % 10 = 0
+630 % 10 = 0
+840 % 10 = 0
+
+Linear probing is used to find the next available
+position.
+
+As collisions increase, the number of operations
+required for searching also increases.
+
+
+5. OBSERVED PERFORMANCE
+
+Total hashing operations = 20
+
+Average hashing operations = 20 / 8
+                            = 2.5
+
+Total linear search comparisons = 36
+
+Average linear search comparisons = 36 / 8
+                                  = 4.5
