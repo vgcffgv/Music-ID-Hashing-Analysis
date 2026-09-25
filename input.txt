@@ -1,0 +1,18 @@
+Music Application Song IDs
+
+105
+210
+315
+420
+525
+630
+735
+840
+
+Hash Table Size = 10
+
+Hash Function:
+h(k) = k % 10
+
+Collision Resolution:
+Linear Probing
