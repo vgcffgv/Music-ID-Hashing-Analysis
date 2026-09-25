@@ -1,0 +1,41 @@
+HASHING VS LINEAR SEARCH
+========================
+
++------+--------------------+--------------------------+
+| ID   | Hashing Operations | Linear Search Comparison|
++------+--------------------+--------------------------+
+| 105  |         1          |            1             |
+| 210  |         1          |            2             |
+| 315  |         2          |            3             |
+| 420  |         2          |            4             |
+| 525  |         3          |            5             |
+| 630  |         3          |            6             |
+| 735  |         4          |            7             |
+| 840  |         4          |            8             |
++------+--------------------+--------------------------+
+| Total|        20          |           36             |
++------+--------------------+--------------------------+
+
+
+AVERAGE PERFORMANCE
+
+Hashing:
+20 / 8 = 2.5 operations
+
+Linear Search:
+36 / 8 = 4.5 comparisons
+
+
+PERFORMANCE COMPARISON
+
+Hashing has fewer observed search operations for
+the given song IDs.
+
+Hashing Average Complexity:
+O(1)
+
+Linear Search Average Complexity:
+O(n)
+
+However, collisions can increase the search operations
+in hashing.
