@@ -1,0 +1,40 @@
+FINAL CONCLUSION
+================
+
+A hash table was implemented for storing the given
+music application song IDs using the Division Method.
+
+The hash function used was:
+
+h(k) = k % 10
+
+Linear probing was used to resolve collisions.
+
+The load factor of the hash table was:
+
+8 / 10 = 0.8
+
+Several collisions occurred because multiple song IDs
+produced the same hash value. Linear probing allowed
+the IDs to be stored in the next available positions.
+
+For searching the 8 song IDs, hashing required a total
+of 20 operations, while linear search required 36
+comparisons.
+
+Average hashing operations = 2.5
+
+Average linear search comparisons = 4.5
+
+The observed result shows fewer search operations for
+hashing for this input data. The theoretical average
+search complexity of hashing is O(1), while linear search
+has O(n) average complexity.
+
+However, a high load factor and frequent collisions can
+increase the number of operations in hashing.
+
+Therefore, hashing is suitable for a music application
+where fast searching of song IDs is required, provided
+that an appropriate hash function and suitable hash table
+size are selected to reduce collisions.
